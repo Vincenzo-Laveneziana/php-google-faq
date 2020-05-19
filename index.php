@@ -46,8 +46,8 @@
   
   <?php foreach ($faqs as $faq){?>
     <div>
-    <h2> <?php echo $faq["question"] ?></h2>
-    <p><?php echo $faq["answer"] ?></p>
+      <h2> <?php echo $faq["question"] ?></h2>
+      <p><?php echo $faq["answer"] ?></p>
     </div>
   <?php } ?>  
 
