@@ -8,7 +8,7 @@
 
  ​ ​ :desktop_computer: Project Preview:
 
- ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ <img src="dist/img/Cattura.png" width= "700px">
+ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ <img src="dist/img/Screen.png" width= "700px">
 
 
 #
