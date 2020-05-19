@@ -8,7 +8,7 @@
   width: 100%;
   background-color: white;
   z-index: 1;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.795);
 }
 
 .container {
@@ -35,13 +35,12 @@
       font-size: 20px;
     }
   }
-
-  
-
 }
 
 .header-right {
-    
+
+  display: none;
+
   ul {
     @include reset-list;
     display: none;
@@ -52,7 +51,7 @@
     }
 
     a {
-      @include color-a-nav-bar;
+      font-weight: normal;
     }
   }
 }//fine header right
@@ -65,34 +64,58 @@
   top: 0;
   left: 0;
   display: none;
-  padding: 10px;
-  height: 100vh;
-  border-bottom: $border-1-s-grey;
-  background: black;
-  width: 200px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.466);
 
-  
-  ul {
-    @include reset-list;
+  .menu{
+    width: 350px;
+    height: 100vh;
+    background: white;
 
-    display: flex;
-    flex-direction: column;
+    .logo{
 
-    li {
-      margin-left: 10px;
-      padding: 10px;
+      @include flex-center-center(row, flex-start, center);
+      height: 55px;
+      border-bottom: 1px solid $grey;
+      width: 100%;
+      padding: 5px 15px;
 
-      a {
-        @include color-a-nav-bar;
-        font-size: 15px;
-
-        &:hover {
-          color:#30488f;
-        }
+      img {
+        width: 80px;
+        margin-right: 5px;
+        vertical-align: bottom;
       }
-
-    }//fine li
-  }//fine ul
+      a{
+        @include reset-a;
+        font-size: 20px;
+      }
+  
+      
+    }
+  
+    ul {
+      @include reset-list;
+  
+      display: flex;
+      flex-direction: column;
+  
+      li {
+        margin-left: 10px;
+        padding: 15px;
+        border-bottom: 1px solid $grey;
+  
+        a {
+          @include color-a-nav-bar;
+          font-size: 15px;
+  
+          &:hover {
+            color:#30488f;
+          }
+        }
+  
+      }//fine li
+    }//fine ul
+  }
 }// fine hamburger-menu
 
 
@@ -125,7 +148,7 @@
 
   .container {
     @include flex-center-center(column, flex-end, flex-start);
-    height: 100px;
+    height: 90px;
 
     .hamburger{
       width: 100%;
@@ -137,14 +160,39 @@
 
     .header-right{
      
-      @include flex-center-center(row, space-between, center);
+      @include flex-center-center(row, space-between, flex-end);
       width: 100%;
-      height: 30px;
+      height: 35px;
+      line-height: 35px;
+
 
       ul{
         display: inline-block;
-      }
 
+        li{
+          a{
+            @include reset-a;
+            font-weight: 600;
+            margin: 0 15px;
+            padding-bottom: 5px;
+          }
+
+          &:last-child{
+   
+            a{
+              color: #3367D6;
+              border-bottom: 3px solid #3367D6;
+            }
+          }
+
+        }
+      }
+      
+      > a{
+        @include reset-a;
+        font-weight: 600;
+        margin-right: 35px;
+      }
     }
   }
 
@@ -152,11 +200,6 @@
   .hamburger-menu{
     display: none !important;
   }
-
-  
-
-
-  
   
 }
 

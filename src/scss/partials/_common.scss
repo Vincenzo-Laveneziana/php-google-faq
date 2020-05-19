@@ -22,9 +22,9 @@
   color: $grey;
 }
 
-@mixin color-a-nav-bar {
+@mixin color-a-nav-bar($weight: bold) {
   color: $grey;
-  font-weight: bold;
+  font-weight: $weight;
   text-decoration: $none;
 
   &:hover {
@@ -93,15 +93,15 @@ body {
 }
 
 main{
-  padding-top: 60px;
+  padding: 60px 20px 0;
 }
+
 
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
   
 }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
   
@@ -110,15 +110,15 @@ main{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-  main{
-    padding-top: 80px;
-  }
+  
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-  /* body {
+  main{
+    padding-top: 150px;
     width: 1170px;
-  } */
+    margin: 0 auto;
+  }
 
 }

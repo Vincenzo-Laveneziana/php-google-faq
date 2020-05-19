@@ -7,18 +7,16 @@ $(document).ready(function () {
 
   var iconHamburger = $(".hamburger");
   var hamburgerMenu = $(".hamburger-menu");
-  var close = $(".close");
 
 
   iconHamburger.click(function(){
-      hamburgerMenu.toggle(200);
+    hamburgerMenu.toggle(200);
   });
 
-  $("main").click(function(){
+  $(".hamburger-menu").click(function(){
   
-    hamburgerMenu.hide();
-   
-    /* iconHamburger.toggle(); */
+    hamburgerMenu.toggle(200);
+
   });
 
   
