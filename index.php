@@ -3,11 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faq</title>
+  
+  <!-- Titolo e icona -->
+  <title>Titolo</title>
+  <link rel="icon" href="">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+   <!-- Css -->
+   <link rel="stylesheet" href="dist/css/main.css">
+
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
 
+  <header>
 
+    <div id="head">
+
+      <div class="container">
+
+        <a href="#" class="hamburger">
+          <i class="fas fa-bars"></i>
+        </a>
+
+        <div class="header-left">
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="logo">
+          <a href="#">Domande frequenti</a>
+        </div>
+        
+        <div class="header-right">
+          <ul>
+            <li>
+              <a href="#">Introduzione</a>
+            </li>
+            <li>
+              <a href="#">Norme sulla privacy</a>
+            </li>
+            <li>
+              <a href="#">Termini di servizio</a>
+            </li>
+            <li>
+              <a href="#">Tecnologie</a>
+            </li>
+            <li>
+              <a href="#">Domande frequenti</a>
+            </li>
+          </ul>
+
+          <a href="#">Account Google</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <div class="hamburger-menu">
+      <ul>
+        <li>
+          <a href="#">Introduzione</a>
+        </li>
+        <li>
+          <a href="#">Norme sulla privacy</a>
+        </li>
+        <li>
+          <a href="#">Termini di servizio</a>
+        </li>
+        <li>
+          <a href="#">Tecnologie</a>
+        </li>
+        <li>
+          <a href="#">Domande frequenti</a>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main>
   <?php 
     $faqs = [
       [
@@ -50,6 +125,18 @@
       <p><?php echo $faq["answer"] ?></p>
     </div>
   <?php } ?>  
+  </main>
+
+  
+
+
+
+
+<!-------------------- JS -------------------->
+<!-- Jquery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+<!-- Main JS -->
+<script src="dist/js/main.js"></script>
 
 </body>
 </html>

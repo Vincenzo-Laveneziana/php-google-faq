@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/****************** 
+  Vars
+******************/
+
+/****************** 
+  Common Style
+******************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 60px;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* body {
+    width: 1170px;
+  } */
+}
+
+/****************** 
+  Header
+******************/
+
+#head {
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.container .hamburger {
+  margin: 0 20px;
+  font-size: 20px;
+  color: #7a7a7a;
+}
+
+.container .header-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55px;
+}
+
+.container .header-left img {
+  width: 80px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.container .header-left a {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-size: 20px;
+}
+
+.header-right ul {
+  list-style: none;
+  display: none;
+}
+
+.header-right ul li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+.header-right ul a {
+  color: #7a7a7a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-right ul a:hover {
+  color: #30488f;
+}
+
+.hamburger-menu {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 10px;
+  height: 100vh;
+  border-bottom: 1px solid #949494;
+  background: black;
+  width: 200px;
+}
+
+.hamburger-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu ul li {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.hamburger-menu ul li a {
+  color: #7a7a7a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.hamburger-menu ul li a:hover {
+  color: #30488f;
+}
+
+.hamburger-menu ul li a:hover {
+  color: #30488f;
+}
+
+@media (min-width: 576px) {
+  /* 
+    mobile
+  */
+}
+
+@media (min-width: 768px) {
+  /* 
+  tablet
+  */
+}
+
+@media (min-width: 1200px) {
+  /* 
+    in questo caso è stato usato con consapevolezza
+  */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100px;
+  }
+
+  .container .hamburger {
+    width: 100%;
+  }
+
+  .container .header-left {
+    margin-left: 20px;
+  }
+
+  .container .header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+  }
+
+  .container .header-right ul {
+    display: inline-block;
+  }
+
+  .hamburger,
+  .hamburger-menu {
+    display: none !important;
+  }
+}
+
+/****************** 
+  Main
+******************/
+
+/****************** 
+  Footer
+******************/
+
